@@ -1,8 +1,9 @@
-package com.sickcat.androidadvanced
+package com.sickcat.androidadvanced.hilt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import com.sickcat.androidadvanced.R
 import com.sickcat.androidadvanced.hilt.MyViewModel
 import com.sickcat.androidadvanced.hilt.Truck
 import com.sickcat.common.activity.BaseContext
@@ -12,7 +13,7 @@ import retrofit2.Retrofit
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(), BaseContext {
+class HiltTestActivity : AppCompatActivity(), BaseContext {
 
     @Inject
     lateinit var truck: Truck
